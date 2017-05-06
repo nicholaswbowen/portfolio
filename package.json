@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "version": "0.0.1",
+  "description": "Nicholas Bowen's Porfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nicholas Bowen",
+  "license": "ISC",
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.1",
+    "angular": "^1.6.4",
+    "angular-ui-bootstrap": "^2.5.0",
+    "jasmine": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/angular": "^1.6.17",
+    "@types/angular-ui-router": "^1.1.36"
+  }
+}
