@@ -1,4 +1,5 @@
 import * as angular from 'angular';
+
 import 'angular-ui-bootstrap';
 import '@uirouter/angularjs';
 
