@@ -4,8 +4,7 @@ module.exports = {
   entry: {
     main: './client/app/app.module.ts',
     vendor: [
-      'babel-polyfill',
-      'fbemitter'
+      'babel-polyfill'
     ]
   },
   output: {
@@ -17,7 +16,7 @@ module.exports = {
     loaders: [{
       test: /\.ts(x?)$/,
       exclude: /node_modules/,
-      loader: 'babel-loader?presets[]=es2016&presets[]=es2015'
+      loader: 'ts-loader'
     }, {
       test: /\.js$/,
       exclude: /node_modules/,
@@ -28,7 +27,7 @@ module.exports = {
     },
     {
      test: /\.scss$/,
-     loaders: ['style-loader', 'css-loader', 'sass-loader']
+     rules: ['style-loader', 'css-loader', 'sass-loader']
     }]
   },
   plugins: [

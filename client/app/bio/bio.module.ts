@@ -1,6 +1,6 @@
 import * as angular from 'angular';
 import controller from './bio.controller';
-
+import './bio.scss'
 const name = 'bio';
 const template = '/app/bio/bio.html';
 
