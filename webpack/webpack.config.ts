@@ -2,10 +2,7 @@ var path = require('path');
 module.exports = {
   cache: true,
   entry: {
-    main: './client/app/app.module.ts',
-    vendor: [
-      'babel-polyfill'
-    ]
+    main: './client/app/app.module.ts'
   },
   output: {
     path: __dirname + '/../client/dist/',
@@ -16,14 +13,7 @@ module.exports = {
     loaders: [{
       test: /\.ts(x?)$/,
       exclude: /node_modules/,
-      loader: 'ts-loader'
-    }, {
-      test: /\.js$/,
-      exclude: /node_modules/,
-      loader: 'babel',
-      query: {
-        presets: ['es2016', 'es2015']
-      }
+      rules: ['awesome-typescript-loader']
     },
     {
      test: /\.scss$/,
@@ -32,8 +22,9 @@ module.exports = {
   },
   plugins: [
   ],
+  devtool: "source-map",
   resolve: {
     // Add `.ts` and `.tsx` as a resolvable extension.
-    extensions: ['.webpack.js', '.web.js', '.ts', '.tsx', '.js']
+    extensions: ['.ts', '.tsx']
   },
 };

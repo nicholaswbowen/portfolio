@@ -29,6 +29,7 @@
   "devDependencies": {
     "@types/angular": "^1.6.17",
     "@types/angular-ui-router": "^1.1.36",
+    "@types/core-js": "^0.9.41",
     "@types/node": "^7.0.18",
     "@types/requirejs": "^2.1.29",
     "@types/webpack": "^2.2.15",
@@ -41,6 +42,7 @@
     "bootstrap-loader": "^2.1.0",
     "bootstrap-sass-loader": "^1.0.10",
     "css-loader": "^0.28.1",
+    "dotenv": "^4.0.0",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.1",
     "lite-server": "^2.3.0",

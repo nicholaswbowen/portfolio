@@ -4,6 +4,11 @@
         "module": "commonjs",
         "sourceMap": true,
 	    "watch": true,
-        "types": ["node"]
+        "types": ["node"],
+        "awesomeTypescriptLoaderOptions": {
+            "useBabel": true,
+            "useCache": true,
+            "useTranspileModule": true
+        }
     }
 }

@@ -18,6 +18,20 @@ const dependencies = [
 
 angular.module(name, dependencies)
   .config(config)
-  .run(run);
+  .run(run)
+  .factory('$exceptionHandler', ['$window', function ($window) {
+    //Replace value within quotes with your API key instead
+
+    // create a new event
+    var appEvent = $window.trakerr.createAppEvent();
+
+    return function (exception, cause) {
+        // ...
+
+        $window.trakerr.sendError(exception, "Error", function(error, data, response) {
+            // ... handle or log response if needed ...
+        });
+    };
+}]);
 
 angular.bootstrap(document.body, [name]);
